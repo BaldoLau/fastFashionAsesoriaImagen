@@ -1,0 +1,223 @@
+/*
+#B2A4FF gris
+#FFB4B4 rosa
+#FFDEB4 rosa claro
+#FDF7C3 rosa blanco
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Caslon+Display&display=swap');
+
+/* font-family: 'Libre Baskerville', serif; */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 62.5%;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+
+    width: 60%;
+
+}
+
+header ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+header a img {
+    width: 70px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    color: #B2A4FF;
+    font-size: 7rem;
+    font-style: italic;
+    font-weight: 100;
+    text-decoration: solid;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 100;
+    text-decoration: solid;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* INDEX TÍTULO*/
+
+.indexTitulo {
+    text-align: center;
+    background-image: url(../images/colorimetria-imagen-principal-header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+
+
+}
+
+.indexTitulo p {
+    color: #FDF7C3;
+}
+
+.presentacionParrafo {
+    background-color: #FFDEB4;
+    color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px 50px;
+    font-size: 1.5rem;
+    text-align: center;
+
+
+}
+
+
+
+.recuadroTeAyudamos {
+    background-color: #B2A4FF;
+    color: #FFDEB4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.recuadroTeAyudamos div {
+    margin: 1rem;
+
+}
+
+
+
+
+.inspoFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FDF7C3;
+    align-items: center;
+
+}
+
+.inspoFlex p {
+    color: fuchsia;
+    font-style: italic;
+    font-size: 1rem;
+
+}
+
+
+.border {
+
+    border: solid 5px #FDF7C3;
+
+}
+
+/* GRID */
+.contendorGrid img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contendorGrid {
+    display: grid;
+    grid-template-columns: 20% 10% 5%;
+    grid-template-rows: 80px 70px 180px 200px 170px;
+    grid-template-areas: "h1 h1 h1" "look1 texto1 texto1" "look1 look2 look2" "texto2 look3 texto3" "h2 h2 h2";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.contendorGrid p {
+    text-align: justify;
+    margin: 0 25px;
+    color: #B2A4FF;
+    font-weight: 300;
+}
+
+.contendorGrid h1 {
+    color: black;
+    font-size: 3rem;
+
+
+}
+
+.contendorGrid h2 {
+    color: black;
+    font-size: 3rem;
+
+
+
+}
+
+.gridTituloUno {
+    grid-area: h1;
+}
+
+.gridLook1 {
+    grid-area: look1;
+}
+
+.gridLook2 {
+    grid-area: look3;
+}
+
+.gridLook3 {
+    grid-area: look2;
+}
+
+
+.gridTituloDos {
+    grid-area: h2;
+}
+
+.gridTextoUno {
+    grid-area: texto1;
+}
+
+.gridTextoDos {
+    grid-area: texto2;
+}
+
+.gridTextoTres {
+    grid-area: texto3;
+}
+
+.tituloDeUno {
+    color: black;
+    font-size: 1rem;
+}
